@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var num = c = 1674545; //输入数值
+			//计算数值位数
+			var a = 0; 
+			while (num >= 1) {
+				a++;
+				num = num / 10;
+			};
+
+			num = c; //对num重新赋值
+			
+			var i = 10;
+			var j = 1;
+			var sum = 1;
+			for (b = 1; b <= a; b++) {
+				sum = (num % i) / j;
+				console.log(parseInt(sum)); //控制台输出
+				i *= 10
+				j *= 10
+			};
+		</script>
+	</body>
+</html>
